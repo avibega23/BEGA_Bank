@@ -4,7 +4,7 @@
 using namespace std;
 
 class User{
-    private:
+    public:
         string name;
         int account_number;
         double balance;
