@@ -27,7 +27,7 @@ int main()
                 cout << "Login Succesful" << endl;
                 int action;
                 do{
-                    cout << "1. Deposit" << endl << "2. Withdraw" << endl << "Log out" << endl << "Enter Choice: ";
+                    cout << "1. Deposit" << endl << "2. Withdraw" << endl<<"3. Check Details" << endl << "Log out" << endl << "Enter Choice: ";
                     cin >> action;
 
                     if(action == 1)
@@ -45,6 +45,10 @@ int main()
                         bank.withdraw(user,amount);
                     }
                     else if(action == 3)
+                    {
+                        user->showDetails();
+                    }
+                    else
                     {
                         break;
                     }
